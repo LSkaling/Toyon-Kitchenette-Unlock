@@ -55,19 +55,18 @@ def move_motor(dir, timeout, debounce_time=0.2):
 
     GPIO.output(motor_enable, 0)
     GPIO.output(motor_control, 0)
-    
-    #TODO: log amount of time it took
 
-time.sleep(2)
 
-print("moving")
+# time.sleep(2)
+
+# print("moving")
 # move_motor(0, 6, 1) #1: moving down
 # move_motor(1, 6, 1) #1: moving up
 
-myobj = gTTS(text=f"Welcome, Lawton. Please clean up after yourself, and report any issues with the kitchenette to the google form.", lang="en", slow=False) 
+# myobj = gTTS(text=f"Welcome, Lawton. Please clean up after yourself, and report any issues with the kitchenette to the google form.", lang="en", slow=False) 
 
-myobj.save("welcome.mp3") 
-os.system("mpg321 welcome.mp3")
+# myobj.save("welcome.mp3") 
+# os.system("mpg321 welcome.mp3")
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
