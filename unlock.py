@@ -19,8 +19,8 @@ import time
 
 app = Flask(__name__)
 
-switch = 26
-motor_enable = 17
+switch = 4
+motor_enable = 22
 motor_control = 27
 
 GPIO.cleanup()
